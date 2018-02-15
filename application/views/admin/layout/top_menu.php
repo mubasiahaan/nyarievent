@@ -1,0 +1,2 @@
+<a href="<?php echo site_url('admin/home/logout'); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-log-out"></span> <strong>Logout</strong></a>
+    <div class="pull-right"> <span>Welcome,</span> Admin</div>
