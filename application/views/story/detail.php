@@ -22,9 +22,8 @@
                             <div class="pull-right">
                                 <a href="<?= site_url('event') ?>" class="orr">View Event &raquo;</a>
                             </div>
-                            <img src="<?= ASSETS_PATH; ?>img/icon-fb.png" alt="" />
-                            <img src="<?= ASSETS_PATH; ?>img/icon-twitter.png" alt="" />
-                            <img src="<?= ASSETS_PATH; ?>img/icon-google.png" alt="" />
+                            <?php $this->load->view('share/soc_med_script'); ?>
+                            <?php $this->load->view('share/sharer'); ?>
                         </div>
                     </div>
                     <div class="col-md-4">

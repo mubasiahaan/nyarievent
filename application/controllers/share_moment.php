@@ -29,7 +29,7 @@ class Share_moment extends MY_Controller {
             $this->data['key_update'] = $param ['index'];
         }
 
-        
+
         $this->data['rec_data'] = $this->story->get_data(null, array('status' => 1), 6, null, 'id DESC');
         $this->data ['page_icon'] = 'glyphicon-stats';
         $this->data ['page'] = $this->load->view($this->get_page(), $this->data, true);
@@ -47,7 +47,7 @@ class Share_moment extends MY_Controller {
         $this->data['rec_detail'] = $this->story->get_data(null, array(
             'id' => $key_update
                 ), null, null, null, null, 'row');
-
+        $this->data['link'] = site_url('event/detail/' . $key_update . '/' . urlencode($this->data['rec_detail']->title));
         $this->data['view'] = $this->data['rec_detail']->view + 1;
         $data = array(
             'view' => $this->data['view']
